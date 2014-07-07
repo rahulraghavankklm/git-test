@@ -1,5 +1,5 @@
 !!! 5
-%html
+%htmlt
   %head
     %meta{"http-equiv" => "Content-type", :content => "text/html; charset=utf-8"}
     %link{:rel => "stylesheet", :href => "css/styles.css", :media => "screen"}
