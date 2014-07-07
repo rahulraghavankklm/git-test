@@ -1,0 +1,35 @@
+@mixin awesome-text($size){
+    font-size: $size;
+    font-weight: bold;
+    color: blue;
+    
+}
+
+@mixin image-replace($image-url) {
+    &, & a {
+        display: block;
+        background: url($image-url) no-repeat;
+    }
+    a{
+        text-indent: -99999px;
+        text-decoration: none;
+    
+    }
+    
+} 
+
+h1{
+    @include image-replace("images/background.jpg"); 
+}
+
+
+$page-width;500px;
+$sidebar-width:100px;
+$content-width: $page-width - $sidebar-width;
+
+p {
+    @include awesome-text(24px);
+}
+li {
+    @include awesome-text(18px);
+}

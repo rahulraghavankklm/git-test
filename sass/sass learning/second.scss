@@ -1,0 +1,33 @@
+// @IF
+
+$type:big;
+p{
+    @if $type == big {
+        font-size:24px;
+    }
+}
+
+
+// @IF  @ELSE
+
+$type:small;
+p{
+    @if $type == big {
+        font-size:24px;
+    }
+    @else if $type == small {
+        font-size: 18px;
+    }
+    @else {
+        font-size: 16px;
+    }
+}
+
+// @FOR
+
+@for $i from 1 through 3 {
+    item-#{$i} {
+    
+        width: 10px * $i;
+    }
+}
